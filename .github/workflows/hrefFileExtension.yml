@@ -18,7 +18,7 @@ jobs:
     
     steps:
       - name: Checkout the main branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: main
       - name: Change directory to path of Java Archive and run GitHubActionFindAndReplace.jar
