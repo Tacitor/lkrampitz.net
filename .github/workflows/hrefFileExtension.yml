@@ -23,6 +23,6 @@ jobs:
           ref: main
       - name: Change directory to path of Java Archive and run GitHubActionFindAndReplace.jar
         run: |
-          cd /var/donau.ca/actions-runner/_donau.ca_work/donau.ca/donau.ca/tools/Java/GitHubActionFindAndReplace/dist
-          java -jar GitHubActionFindAndReplace.jar "/var/donau.ca/actions-runner/_donau.ca_work/donau.ca/donau.ca/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
+          cd /var/lkrampitz.net/actions-runner/_lkrampitz.net_work/lkrampitz.net/lkrampitz.net/tools/Java/GitHubActionFindAndReplace/dist
+          java -jar GitHubActionFindAndReplace.jar "/var/lkrampitz.net/actions-runner/_lkrampitz.net_work/lkrampitz.net/lkrampitz.net/www" ".html\" data-remove-file-extension=\"true\"" "\" data-remove-file-extension=\"true\""
         shell: bash
