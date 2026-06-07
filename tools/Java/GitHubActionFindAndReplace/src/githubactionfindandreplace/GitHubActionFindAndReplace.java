@@ -101,6 +101,7 @@ public class GitHubActionFindAndReplace {
             writer = new FileWriter(file);
 
             writer.write(newContent);
+            System.out.println("Successful findAndReplaceFile() on " + file.toString());
         } catch (IOException e) {
             System.err.println("Error: \n" + e);
         } finally {
