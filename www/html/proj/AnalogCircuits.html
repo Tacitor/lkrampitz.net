@@ -216,18 +216,58 @@
 
                 <div class="img_txt_section">
                     <div class="img_txt_section_img_div">
-                        <img class="no_border_radius img_txt_section_img"
-                            src="images/CatanConnect-2548.webp"
-                            srcset="images/CatanConnect-637.webp 637w,
-                                    images/CatanConnect-1274.webp 1274w,
-                                    images/CatanConnect-2548.webp 2548w"
-                            sizes="(min-width: 500px) calc(40vw - 50px), calc(78.75vw - 236px)"
-                            alt="A screenshot of the old menu used to connect to an online game of catan.">
+                        <img class="img_txt_section_img"
+                            src="images/originals/adc_succ.png"
+                            alt="Symbol of the 4-bit successive approximation ADC">
                     </div>
 
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Lab 2 here
+                            The second lab was all about Hardware descriptive languages and Verilog-A.
+                            Modern day electronic systems and ICs rely heavily on hardware descriptive
+                            languages (HDL). It would be an immense understatement to claim designing complex a IC with a
+                            million or more transistors at the schematic level as impractical. Luckily with HDLs like Verilog,
+                            and extensions that support analogue behaviour like Verilog-A this task becomes realistic. This
+                            second lab included the critical component definition and entry at the behavioural level.
+                            The end goal will was to design and implement a 4-bit DAC and ADC. The design for the 4-bit ADC was entered into Virtuoso using Verilog-A
+                            The full source code can be seen in the Full lab 2 PDF which is linked below. A symbol for the component was made which can be seen on the left.
+                            Creating this symbol for the component defined by Verilog-A lets it be used in a schematic layout too.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/adc_succ_tb.png"
+                            alt="Schematic view of test bench for the ADC">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            This schematic then became very helpful in setting up a test bench to validate the design of the ADC. The ADC takes a single DC voltage as an input.
+                            In the case of the test bench seen on the left the input that will be simulated is a smooth ramp input. To power the conversion the ADC also needed
+                            1V of VDD. To scale the binary output it was given a reference of 1V. It also needed a clock pulse as input to trigger a new sample of the input voltage.
+                            The final output was a four bit value in binary. An input of 0V should give an output of 0b0000. And any input of 937.5mV or greater results in a full 0b1111.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/adc_succ_tb_ALLDOT.png"
+                            alt="Schematic view of test bench for the ADC">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            And sure enough looking at the simulation results that is exactly what was seen! This second lab also had a very similar second
+                            part that involved designing a Digital to Analog converter.
                         </p>
                         
                         <div class="nav_button_div">
