@@ -73,11 +73,17 @@
 
                 <div class="txt_section">
 
-                    Intro the course here
+                    The purpose of the ENGG*4080: Micro and Nano-Scale Electronics course was to describe the operating principles of analog integrated micro and nano scale electronic circuits and to teach how to design
+                    and use such circuits systems. Course topics include: device and circuit fabrication in silicon operation and layout of active and passive elements,
+                    analog and switched-capacitor filters, analog-to-digital converters, oscillators, readout channels for integrated sensors, and analog integrated circuits
+                    for embedded applications. The main emphasis is on device models, circuit operation, and design techniques with an extra special emphasis on amplifiers.
+                    Dr. Stefano Gregori is very passionate about amplifiers and much of the course was spend working with them.
                     <br>
                     <br>
 
-                    Lead into the lab and project structure
+                    This course was heavily focused around independent lab work, and the last month of the course was dedicated to a final project completed in pairs.
+                    I am very thankful for having the pleasure of working with Eric Yates on the final project. He is simply one of the best computer engineers I have met at
+                    the U of G and I was very lucky to have been able to get to know him.
 
                 </div>
 
@@ -86,7 +92,63 @@
                 <div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Lab 1 here
+                            The first lab was all about Schematic entry and circuit simulation. I was dropped in head first into Cadence Virtuoso and this lab was very much a self
+                            guided exploration of the tool. Modern day electronic systems and ICs rely heavily on transistors, specifically MOSFETs using CMOS technology.
+                            MOSFETs are very versatile devices, and can be used as amplifiers, or switches. When assembled together they can make logic gates, and build large scale
+                            ICs. This lab was completed using the TSMC 65-nm CMOS technology. This laboratory was comprised of two experiments that teach the fundamentals of
+                            schematic entry and circuit simulation in Cadence Virtuoso. The first part relates to simple n-type and p-type MOSFETs. The seconds relates
+                            to a Common-source amplifier making use of the two types of MOSFETs from the first experiment. For the first part two MOSFETS were places on one schematic.
+                            They were appropriately wired up with parametric gate-source and drain-source voltages. The Schematic for the NMOS and PMOS can be seen to the right.
+                            Then a DC Simulation of the NMOS and PMOS transistors was performed. A portion of the results can be seen below. The purpose of these simulation was to characterize
+                            the MOSFETs. Some of the key values are the trans-conductance <i>g<sub>m</sub></i> in microsiemens, the drain-source resistance <i>r<sub>DS</sub></i> in kilo-ohms,
+                            and threshold voltage <i>V<sub>th</sub></i> in millivolts.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/mosfet.png"
+                            alt="Schematic for NMOS and PMOS">
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/gm_plot900nm.png"
+                            alt="Values for gm of a 900nm NMOS">
+
+                        <div class="image_desc">
+                            Value of <i>g<sub>m</sub></i> = 258.2&mu;S for NMOS and <i>g<sub>m</sub></i> = 111.4&mu;S for PMOS with a 900nm width.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/rDS_plot900nm.png"
+                            alt="Values for rDS of a 900nm NMOS">
+
+                        <div class="image_desc">
+                            Value of <i>r<sub>DS</sub></i> = 69.1k&Omega; for NMOS, and <i>r<sub>DS</sub></i> = 107.1k&Omega; for PMOS with a 900nm width which are the inverse of the values at the V1 intercept line.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            The second part of this fist lab was producing the schematic and testing a Common-source Amplifier. Using the small signal model of the CS amplifier
+                            and some of the values from the simulation in part one the gain of the amp was predicted. The calculated gain was <i>A<sub>v</sub></i> = -15.09.
+                            Next the voltage gain was measured using transient and AC analysis. These simulation results can be compared with the calculated values above.
+                            A DC Simulation of the amplifier was also performed. A portion of the resulting plots from the simulation can be seen below.
+                            This simulation was at ambient temperature with no corner cases on the TSMC 65nm process.
+                            Additionally in part 2 of the experiment there was an attempt to increase the gain of the amplifier by 20%.
+                            A simulation was made this time the width of the transistor M1 was set as parameter and swept from 200nm to 600nm to see if any increases in gain could be made.
                         </p>
                         
                         <div class="nav_button_div">
@@ -111,7 +173,7 @@
 
                                 </div>
                                 <div class="nav_button_anchor_flex_text">
-                                Full PDF
+                                Full lab 1 PDF
                                 </div>
                             </div>
                             </a>
@@ -120,14 +182,34 @@
 
                     <div class="img_txt_section_img_div">
                         <img class="img_txt_section_img"
-                            src="../images/catan-1280.webp"
-                            srcset="../images/catan-640.webp 640w,
-                                    ../images/catan-1280.webp 1280w,
-                                    ../images/catan-2560.webp 2560w"
-                            sizes="(min-width: 480px) calc(40vw - 50px), calc(77.5vw - 223px)"
-                            alt="A cropped close-up of a game of catan.">
+                            src="images/originals/csamp.png"
+                            alt="Schematic for the Common-source Amplifier">
                     </div>
 
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/CS-amp_single-hor.png"
+                            alt="Transient, AC, and DC analysis of the Common-source Amplifier">
+
+                        <div class="image_desc">
+                            Transient, AC, and DC analysis of the Common-source Amplifier.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/CS-amp_width_para_AC.png"
+                            alt="Parametric width simulation from 200nm to 600nm">
+
+                        <div class="image_desc">
+                            Parametric width simulation from 200nm to 600nm.
+                        </div>
+                    </div>
                 </div>
 
                 <div class="break_spacer"></div>
@@ -170,7 +252,7 @@
 
                                 </div>
                                 <div class="nav_button_anchor_flex_text">
-                                Full PDF
+                                Full lab 2 PDF
                                 </div>
                             </div>
                             </a>
@@ -208,7 +290,7 @@
 
                                 </div>
                                 <div class="nav_button_anchor_flex_text">
-                                Full PDF
+                                Full lab 3 PDF
                                 </div>
                             </div>
                             </a>
@@ -267,7 +349,7 @@
 
                                 </div>
                                 <div class="nav_button_anchor_flex_text">
-                                Full PDF
+                                Full project PDF
                                 </div>
                             </div>
                             </a>
