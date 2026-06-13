@@ -92,7 +92,7 @@
                 <div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            The first lab was all about Schematic entry and circuit simulation. I was dropped in head first into Cadence Virtuoso and this lab was very much a self
+                            <b><u>The first lab</u></b> was all about Schematic entry and circuit simulation. I was dropped in head first into Cadence Virtuoso and this lab was very much a self
                             guided exploration of the tool. Modern day electronic systems and ICs rely heavily on transistors, specifically MOSFETs using CMOS technology.
                             MOSFETs are very versatile devices, and can be used as amplifiers, or switches. When assembled together they can make logic gates, and build large scale
                             ICs. This lab was completed using the TSMC 65-nm CMOS technology. This laboratory was comprised of two experiments that teach the fundamentals of
@@ -223,7 +223,7 @@
 
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            The second lab was all about Hardware descriptive languages and Verilog-A.
+                            <b><u>The second lab</u></b> was all about Hardware descriptive languages and Verilog-A.
                             Modern day electronic systems and ICs rely heavily on hardware descriptive
                             languages (HDL). It would be an immense understatement to claim designing complex a IC with a
                             million or more transistors at the schematic level as impractical. Luckily with HDLs like Verilog,
@@ -305,9 +305,87 @@
                 <div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Lab 3 here
+                            <b><u>The third lab</u></b> was the last one before the final project. It was all about layout drafting and verification in Virtuoso, the layout
+                            was my favourite part of the course by far! The layout process is a fundamental stage to designing any modern day electronic systems and
+                            integrated circuits. This lab explored the critical process of taking a schematic
+                            level design and translating it to a layout that can be physically realized. The end goal was to
+                            design, implement, and simulate the layout of a Common-source Amplifier. A new schematic of the CS amp was entered much like in the first lab.
+                            This CS amp was then also given a symbol. And then a test bench was created from the schematic/symbol. This was done to validate the design
+                            and to characterize when using ideal NMOS and PMOS FETs
                         </p>
-                        
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/csamp_schem.png"
+                            alt="Schematic of the Common-source amplifier.">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/csamp_symbol.png"
+                            alt="Symbol of the Common-source Amplifier.">
+
+                        <div class="image_desc">
+                            Symbol of the Common-source Amplifier.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/csamp_tb.png"
+                            alt="Schematic view of test bench for the Common-source Amplifier.">
+
+                        <div class="image_desc">
+                            Schematic view of test bench for the Common-source Amplifier.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    The next stage was to draw the equivalent layout and minimize the area of the amplifier. The final layout was
+                    heavily influenced by the Design Rule Check, as there were
+                    many cycles of modifying the layout, re-running the DRC, and fixing new errors that arose. It is
+                    worth noting in the final layout, both of the two-finger PMOS transistors are overlaid and share a
+                    source to minimize area. The Calibre DRC was a very important part of the layout design. It is an extremely useful tool to
+                    ensure all the requirements of the TSMC 65nm process node are kept. After many hours of work I was extremely happy
+                    to have the finished layout seen below. The dark blue layers are PO (Polysilicon) layers and for the gate of the the FETs. The teal layer is the lowest
+                    metal layer on the TSMC 65nm node. The green squared are interconnects/vias from the higher metal layer down to the substrate. Commonly the via connects the 
+                    metal layer to the PO or to the red active layer. Depending on whether the red active regions are within the boundary of an n-well or p-well determines
+                    it it becomes n<sup>+</sup> or p<sup>+</sup> doped. 
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/layoutX0.5.png"
+                            alt="The final layout of the Common-source Amplifier.">
+
+                        <div class="image_desc">
+                            The final layout of the Common-source Amplifier.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            The layout was considered completed once it passed the DRC (Design Rule Check) and the LVS (Layout vs Schematic) tests.
+                            After that parasitic extraction was performed so that the layout may be simulated to account for the geometry selected.
+                            The Post-layout simulation plot was then appended to the pre-layout simulation. As seen to the right the AC and DC responses were very close
+                            but the transient response was very different.
+                        </p>
+
                         <div class="nav_button_div">
                             <a class="nav_button_anchor" target="_blank"
                             href="../resources/ENGG4080_Lab3_Lukas_Krampitz.pdf">
@@ -339,14 +417,9 @@
 
                     <div class="img_txt_section_img_div">
                         <img class="img_txt_section_img"
-                            src="../images/catan-1280.webp"
-                            srcset="../images/catan-640.webp 640w,
-                                    ../images/catan-1280.webp 1280w,
-                                    ../images/catan-2560.webp 2560w"
-                            sizes="(min-width: 480px) calc(40vw - 50px), calc(77.5vw - 223px)"
-                            alt="A cropped close-up of a game of catan.">
+                            src="images/originals/post-layout-sim.png"
+                            alt="Post-layout simulation plot appended to the pre-layout simulation.">
                     </div>
-
                 </div>
 
                 <div class="break_spacer"></div>
@@ -354,19 +427,23 @@
                 <div class="img_txt_section">
                     <div class="img_txt_section_img_div">
                         <img class="no_border_radius img_txt_section_img"
-                            src="images/CatanConnect-2548.webp"
-                            srcset="images/CatanConnect-637.webp 637w,
-                                    images/CatanConnect-1274.webp 1274w,
-                                    images/CatanConnect-2548.webp 2548w"
-                            sizes="(min-width: 500px) calc(40vw - 50px), calc(78.75vw - 236px)"
+                            src="images/originals/pga_dev.jpg"
                             alt="A screenshot of the old menu used to connect to an online game of catan.">
                     </div>
 
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Project with Eric here
+                            <b><u>The final project</u></b> was much a much more involved process than the labs. I was very lucky to have been able to work with Eric Yates
+                            for said project. The task was to fully design the analog portion of a smartwatch for the fictional company Gizmonic.
+                            The integrated circuit design for an electrocardiogram (ECG) in a smart watch application was
+                            divided into three modules: an analogue multiplexer, a programmable gain amplifier, and a
+                            6-bit analogue to digital converter. The module designs were all to be implemented using the TSMC
+                            65-nm CMOS technology. The watch platform has a RISC core which will provide control signals
+                            for the analogue modules. A peak into the development process for the programmable gain amplifier can be seen to the left.
+                            This was a very large project and does not lend itself well to summary. The high level top module and be seen below, and for
+                            addition details the full project PDF can be viewed.
                         </p>
-                        
+
                         <div class="nav_button_div">
                             <a class="nav_button_anchor" target="_blank"
                             href="../resources/ENGG4080_Report_Group_12.pdf">
@@ -399,10 +476,16 @@
 
                 <div class="break_spacer"></div>
 
-                <div class="txt_section">
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/top_FINAL.png"
+                            alt="Schematic of the Top Level.">
 
-                    Conclude here if needed. Maybe lead into future VLSI course?
-
+                        <div class="image_desc">
+                            Schematic of the Top Level.
+                        </div>
+                    </div>
                 </div>
 
             </main>
