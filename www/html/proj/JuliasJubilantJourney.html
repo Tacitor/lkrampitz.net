@@ -152,19 +152,45 @@
 
                 <div class="img_txt_section">
                     <div class="img_txt_section_img_div">
-                        <img class="no_border_radius img_txt_section_img"
-                            src="images/CatanConnect-2548.webp"
-                            srcset="images/CatanConnect-637.webp 637w,
-                                    images/CatanConnect-1274.webp 1274w,
-                                    images/CatanConnect-2548.webp 2548w"
-                            sizes="(min-width: 500px) calc(40vw - 50px), calc(78.75vw - 236px)"
+                        <img class="img_txt_section_img"
+                            src="images/originals/cis2750_a2.png"
                             alt="A screenshot of the old menu used to connect to an online game of catan.">
                     </div>
 
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Paragraph B
+                            The second part was all about building a python wrapper of the C backend library. Using <code>ctypes</code> the argument types
+                            and result types were defined. Then classes were defined in Python with methods that would call the backend C functions with lots of error
+                            handling. A new A2 git repo was set up for this second part. The initial commit of the A2 repo was copying the state of the repo from part one.
+                            This also meant that development stopped on the A1 repo at this time which makes it a perfect snapshot of the start of part 2.
+                            <br><br>
+                            It was important that the top level classes and methods were a <i>pythonic</i> as possible. The goal was that if the user only opens
+                            <code>run_integration.py</code> in A2 or the future python files <code>run_game.py</code> and <code>game_ui.py</code> from A3 that
+                            they would have no idea 77% of the source code for the game was written in C.
                         </p>
+
+                        <div class="nav_button_div">
+                            <a class="nav_button_anchor"
+                                href="https://github.com/Tacitor/CIS2750-A2"
+                                target="_blank">
+                                <div class="nav_button_anchor_flex">
+                                    <div class="nav_button_anchor_flex_svg">
+                                        <svg class="nav_button_svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16"
+                                            width="32" height="32" fill="#eaeaee">
+                                            <path
+                                                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="nav_button_anchor_flex_text">
+                                        View A2 Source
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -176,7 +202,11 @@
                     <br>
                     <br>
 
-                    Paragraph D
+                    Add this to the A3 README. Need to run on Linux preferable Debian based. Prerequisites are make gcc python3 (sudo apt install make gcc python3)
+                    Navigate to CIS2750-A3/python. Run make dist, then if there have been no errors it should be ready to go. For quick testing you
+                    can run make play which will use the ../assets/test.json player profile. Once you are ready to play on your own profile run
+                    python3 run_game.py --config ../assets/&lt;CONFIG_FILE&gt;.ini --profile ../assets/&lt;PLAYER_PROFILE_FILE&gt;.json. The &lt;PLAYER_PROFILE_FILE&gt;
+                    may be an existing file, or one that doesn't exist yet. The game will handel it.
 
                 </div>
 
