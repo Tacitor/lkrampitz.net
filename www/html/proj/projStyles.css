@@ -88,6 +88,10 @@ sub {
     flex: 1;
 }
 
+.img_txt_section_img_div_3_quart {
+    flex: 3;
+}
+
 .proj_p {
     margin-top: 0px;
     margin-bottom: 0px;

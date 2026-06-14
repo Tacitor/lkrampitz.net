@@ -92,25 +92,60 @@
                     </a>
                 </div>
 
+                <div class="txt_section">
+
+                    The flow should be a small intro. Then A1 and link repo, A2 + repo, focus on A3 +link repo again and talk about bringing it all together.
+                    Maybe also think about adding a release to the GitHub and adding a download release version to the nav bar. This would mean adding run instructions
+                    to the README.
+
+                </div>
+
+                <div class="break_spacer"></div>
+
                 <div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            Paragraph A. The flow should be a small intro. Then A1 and link repo, A2 + repo, focus on A3 +link repo again and talk about bringing it all together.
-                            Maybe also think about adding a release to the GitHub and adding a download release version to the nav bar. This would mean adding run instructions
-                            to the README.
+                            The first part of developing Julia's Jubilant Journey was creating the back end in C. Most of the development was done cross platform on both my windows PC
+                            and my Linux Mint laptop. Thus, a Docker container was used to provide a smooth dev environment. I made heavy use of Makefile to take care of building, running
+                            and testing through gcc and the Check library for unit testing. Much of the <code>.h</code> header files in <code>c/include/</code> were a specification that
+                            my source code needed to comply with. All of the details of the implementation were for me to design and decide. When I found the spec to be deficient
+                            or where it contained errors I created alternative functions or wrappers in my own user defined headers.
+                            <br><br>
+                            One of the many key function of the C backend is to interface with the data generator from the <code>libpuzzlegen.so</code> shared object
+                            library. This process needs to perform a deep copy on the data provided by the generator since it is only stored in the heap for the life time of the generator
+                            this the World Loader within Julia's Jubilant Journey must copy each field in each struct in order to retain valid pointers to memory. There is much 
+                            more to see on GitHub with the early state of the C backend.
                         </p>
+
+                        <div class="nav_button_div">
+                            <a class="nav_button_anchor"
+                                href="https://github.com/Tacitor/CIS2750-A1"
+                                target="_blank">
+                                <div class="nav_button_anchor_flex">
+                                    <div class="nav_button_anchor_flex_svg">
+                                        <svg class="nav_button_svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16"
+                                            width="32" height="32" fill="#eaeaee">
+                                            <path
+                                                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="nav_button_anchor_flex_text">
+                                        View A1 Source
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="img_txt_section_img_div">
+                    <div class="img_txt_section_img_div_3_quart">
                         <img class="img_txt_section_img"
-                            src="../images/catan-1280.webp"
-                            srcset="../images/catan-640.webp 640w,
-                                    ../images/catan-1280.webp 1280w,
-                                    ../images/catan-2560.webp 2560w"
-                            sizes="(min-width: 480px) calc(40vw - 50px), calc(77.5vw - 223px)"
-                            alt="A cropped close-up of a game of catan.">
+                            src="images/originals/cis2750_a1.png"
+                            alt="Screenshot of the source code for the function loader_load_world()">
                     </div>
-
                 </div>
 
                 <div class="break_spacer"></div>
