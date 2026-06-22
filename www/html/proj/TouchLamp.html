@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>Antique Touch-lamp Restoration </title>
+        <link rel="canonical" href="https://www.lkrampitz.net/proj/TouchLamp">
+
+        <link href="../images/favicon.ico" rel="icon">
+
+        <link href="../navStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../webkitScroll.css">
+        <link href="projStyles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav id="nav_bar_div">
+                <a class="nav_bar header_locations" id="nav_projects"
+                    href="../Projects.html" data-remove-file-extension="true">Projects</a>
+                <a class="nav_bar header_locations" id="nav_about"
+                    href="../About.html" data-remove-file-extension="true">About</a>
+                <a class="nav_bar header_locations" id="nav_contact"
+                    href="../Contact.html" data-remove-file-extension="true">Contact</a>
+                <a class="nav_bar header_title" href="..">HOME</a>
+            </nav>
+
+            <main class="content">
+                <div class="main_title">
+                    Antique Touch-lamp Restoration 
+                </div>
+
+                <div class="info_bar">
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Start
+                        </div>
+                        <div class="info_bar_value">
+                            Dec. 2025
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Technologies
+                        </div>
+                        <div class="info_bar_value">
+                            120V AC, Touch Switch
+                        </div>
+                    </div>
+                    <div id="info_bar_type" class="info_bar_section">
+                        <div class="info_bar_header">
+                            Type
+                        </div>
+                        <div class="info_bar_value">
+                            Electrical work
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Last updated
+                        </div>
+                        <div class="info_bar_value">
+                            Dec. 2025
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            When my grandmother Edith passed away I inherited two beautiful touch-lamps. When I took them into my care they each came with incandescent
+                            bulbs. They worked great for a really long time. Then the first one broke February 2025. It had a bright flash and then went out. It just
+                            looked like the incandescent filament burnt out but when I replaced the bulb and plugged the lamp back in it turned on immediately and nothing happened
+                            anymore when I touched it. This means it was on full brightness all the time with no way to turn it off or dim it. An indeterminate
+                            amount of time later the same thing happened to the second lamp. Both lamps behaved like this
+                            with incandescent bulbs and dimmable LEDs. Naturally, the short term solution was to put the two lamps on a switched power-bar so
+                            I didn't need to unplug them all the time.
+                            <br><br>
+                            The long term solution took me until August since I needed a time when I wasn't swamped with school work
+                            and because I needed to build up the nerve to fix them. I had never done any electrical work before. Since then I have put together
+                            industrial combined panels for 3-phase 400V and am much more comfortable with safely performing electrical work.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/TouchLamp_dual.jpg"
+                            alt="The two touch lamps at full brightness next to each other on a wooden dresser.">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/TouchLamp_oldSwitch.jpg"
+                            alt="The circuit board inside the touch switch box that came with the lamps.">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            After some investigation I traced the problem back to the electronics inside the touch switch control box.
+                            Visually I could see nothing wrong with any of the capacitors, diodes, or resistors. Presumably something burn out
+                            in one of the solid state chips. I was not able to find a data sheet or specifications on this touch switch so it seemed the best
+                            option was to source replacement switches. Unfortunately, Neutron Electronics closed down in Guelph so I had to try and find
+                            somewhere else to purchase these switches. I found Current Electrical Supply and was able to special order in some new switches and
+                            I also picked up some additional wire nuts. After a few weeks I got the call that my switches had arrived in store and I went to pick them up.
+                            By this time it was September and I had started school again. The replacement sat and waited until the Christmas break for when I happened
+                            enough time to perform the repair.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div><div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            Installing the new touch switch went very smoothly. At first I wasn't sure what to do about the missing wire since the new one only had four leads
+                            instead of five. After reviewing the pin out diagram and specs it then made sense why the white neutral wire from the switch needed to be connected
+                            to both the neutral of the bulb and the also the neutral from the mains. I made sure to securely attach the yellow sense wire to the metal
+                            chassis of the lamp. Any of the exposed metal on the exterior of the lamp is electrically connected. Thus touching anywhere on the lamp
+                            on the outside will effect the capacitance that the yellow wire senses. If the change in capacitance has a signal that is greater
+                            than the noise gate the touch switch will advance it's internal state machine to the next brightness level.
+                            The brightness levels go through the order Off&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;Low&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;Medium&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;High,
+                            and then repeat. If power is cut at any point in the cycle, it begins again with the Off state when power is reinstated.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/originals/TouchLamp_fixed.jpg"
+                            alt="What the insides of the lamp looked like after the repair. The touch switch box is now smaller and instead of beige it is black.">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/TouchLamp_smashed.jpg"
+                            alt="The result of the cat related incident that added a gluing component to this project. My cat is not very graceful in the slightest.">
+                        <div class="image_desc">
+                            A cat related incident added a gluing component to this project. My cat is really quite clumsy.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/originals/TouchLamp_beigeBox.jpg"
+                            alt="How the old touch switch box and its 5 wires were installed before the repair.">
+                        <div class="image_desc">
+                            How the old touch switch box and its 5 wires were installed before the repair.
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>
