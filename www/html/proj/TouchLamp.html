@@ -121,16 +121,21 @@
                 <div class="break_spacer"></div><div class="img_txt_section">
                     <div class="img_txt_section_txt">
                         <p class="proj_p">
-                            The repair
-                            <br><br>
-                            Need a pic here of the big and small wire nuts and try to get the new black box in there.
+                            Installing the new touch switch went very smoothly. At first I wasn't sure what to do about the missing wire since the new one only had four leads
+                            instead of five. After reviewing the pin out diagram and specs it then made sense why the white neutral wire from the switch needed to be connected
+                            to both the neutral of the bulb and the also the neutral from the mains. I made sure to securely attach the yellow sense wire to the metal
+                            chassis of the lamp. Any of the exposed metal on the exterior of the lamp is electrically connected. Thus touching anywhere on the lamp
+                            on the outside will effect the capacitance that the yellow wire senses. If the change in capacitance has a signal that is greater
+                            than the noise gate the touch switch will advance it's internal state machine to the next brightness level.
+                            The brightness levels go through the order Off&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;Low&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;Medium&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;High,
+                            and then repeat. If power is cut at any point in the cycle, it begins again with the Off state when power is reinstated.
                         </p>
                     </div>
 
                     <div class="img_txt_section_img_div">
                         <img class="img_txt_section_img"
-                            src="images/originals/cis2750_switches.png"
-                            alt="Screenshot of the game running with a typical config for the world.">
+                            src="images/originals/TouchLamp_fixed.jpg"
+                            alt="What the insides of the lamp looked like after the repair. The touch switch box is now smaller and instead of beige it is black.">
                     </div>
                 </div>
 
@@ -142,7 +147,7 @@
                             src="images/originals/TouchLamp_smashed.jpg"
                             alt="The result of the cat related incident that added a gluing component to this project. My cat is not very graceful in the slightest.">
                         <div class="image_desc">
-                            The result of the cat related incident that added a gluing component to this project. My cat is not very graceful in the slightest.
+                            A cat related incident added a gluing component to this project. My cat is really quite clumsy.
                         </div>
                     </div>
 
