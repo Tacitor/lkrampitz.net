@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>Multiplayer Minesweeper</title>
+        <link rel="canonical" href="https://www.lkrampitz.net/proj/Minesweeper">
+
+        <link href="../images/favicon.ico" rel="icon">
+
+        <link href="../navStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../webkitScroll.css">
+        <link href="projStyles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav id="nav_bar_div">
+                <a class="nav_bar header_locations" id="nav_projects"
+                    href="../Projects.html" data-remove-file-extension="true">Projects</a>
+                <a class="nav_bar header_locations" id="nav_about"
+                    href="../About.html" data-remove-file-extension="true">About</a>
+                <a class="nav_bar header_locations" id="nav_contact"
+                    href="../Contact.html" data-remove-file-extension="true">Contact</a>
+                <a class="nav_bar header_title" href="..">HOME</a>
+            </nav>
+
+            <main class="content">
+                <div class="main_title">
+                    Multiplayer Minesweeper
+                </div>
+
+                <div class="info_bar">
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Start
+                        </div>
+                        <div class="info_bar_value">
+                            June 2021
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Technologies
+                        </div>
+                        <div class="info_bar_value">
+                            Java, Sockets
+                        </div>
+                    </div>
+                    <div id="info_bar_type" class="info_bar_section">
+                        <div class="info_bar_header">
+                            Type
+                        </div>
+                        <div class="info_bar_value">
+                            Online Game
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Last updated
+                        </div>
+                        <div class="info_bar_value">
+                            June 2021
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="nav_button_div">
+                    <a class="nav_button_anchor"
+                        href="https://github.com/EhsanPatel/TEJ4M-Minesweeper"
+                        target="_blank">
+                        <div class="nav_button_anchor_flex">
+                            <div class="nav_button_anchor_flex_svg">
+                                <svg class="nav_button_svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                    width="32" height="32" fill="#eaeaee">
+                                    <path
+                                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="nav_button_anchor_flex_text">
+                                View Source
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="txt_section">
+
+                    This is a little game that I made with a friend of mine. It
+                    was the final summative project for TEJ4M, my Grade 12
+                    Computer Engineering course. The game is based off of the
+                    popular and well-known game of Minesweeper, with an added
+                    multiplayer twist. The game we made together is written in
+                    Java and makes use of Sockets to allow for the online
+                    multiplayer functionality. We split up the work fairly
+                    evenly. I was in charge of making the main menu, and its
+                    interactions with sub menus and the main game. I was also
+                    responsible for writing the net code and ensuring 2
+                    computers could connect to play the game. My partner Ehsan
+                    was responsible for writing the main game and all the
+                    functionality it needed.
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            The main portion of the game has two small
+                            Minesweeper boards next to each other. Each 10x10
+                            board is assigned to one player. Each player gets to
+                            take their turn one after the other. A turn consists
+                            of either scouting a tile or placing a mine on your
+                            opponent's board. A player can flag as many tiles as
+                            they wish in a given turn, placing flags goes not
+                            count as taking your turn. One of the notable
+                            addition to this version of the game is the ability
+                            to change the opponent's mine field during the play
+                            of the game. In place of scouting a tile one can add
+                            bombs to your opponent's board instead.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/MinesweeperGame-1580.webp"
+                            srcset="images/MinesweeperGame-256.webp 256w,
+                                    images/MinesweeperGame-1130.webp 1130w,
+                                    images/MinesweeperGame-1580.webp 1580w,
+                                    images/MinesweeperGame-1920.webp 1920w,
+                                    images/MinesweeperGame-2048.webp 2048w"
+                            sizes="(min-width: 420px) calc(40vw - 50px), calc(80vw - 210px)"
+                            alt="A screenshot of a .JSON file that could be used in the File Processor">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+
+                    We wrote the this game after I had added networking to my
+                    <a class="cust_anchor"
+                        href="Catan.html" data-remove-file-extension="true">Catan</a>
+                    game and the net code is derived off of early versions of
+                    the Catan net code. This means the interface it very similar
+                    to early catan versions. The spoke-and-hub network
+                    architecture is also shared. The game state is transmitted
+                    by writing the entire board state and some control variables
+                    to a file on disk. Then this file is read in by a separate
+                    thread of the program in converted into a serial string of
+                    bytes which are sent to the server. The server then
+                    redistributes the file to the two clients. Once a client
+                    receives an updated game state the thread responsible to
+                    connect to the server calls a trigger in the main thread of
+                    the program to read in the file off of disk again.
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/MinesweeperMenu-1580.webp"
+                            srcset="images/MinesweeperMenu-280.webp 280w,
+                                    images/MinesweeperMenu-1130.webp 1130w,
+                                    images/MinesweeperMenu-1580.webp 1580w,
+                                    images/MinesweeperMenu-1920.webp 1920w,
+                                    images/MinesweeperMenu-2048.webp 2048w"
+                            sizes="(min-width: 500px) calc(40vw - 50px), 137px"
+                            alt="A screenshot of the main menu.">
+
+                        <div class="image_desc">
+                            The main menu that was one of my main contributions.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/MinesweeperConnect-1610.webp"
+                            srcset="images/MinesweeperConnect-256.webp 256w,
+                                    images/MinesweeperConnect-1009.webp 1009w,
+                                    images/MinesweeperConnect-1610.webp 1610w,
+                                    images/MinesweeperConnect-2048.webp 2048w"
+                            sizes="(min-width: 540px) calc(40vw - 50px), (min-width: 440px) calc(57.5vw - 141px), 100px"
+                            alt="A screenshot of a game between 4 players.">
+
+                        <div class="image_desc">
+                            The view seen by the second player when attempting
+                            to connect to the first player.
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

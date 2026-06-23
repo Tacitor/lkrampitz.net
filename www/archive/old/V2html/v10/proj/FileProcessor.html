@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>File Processor</title>
+        <link rel="canonical" href="https://www.lkrampitz.net/proj/FileProcessor">
+
+        <link href="../images/favicon.ico" rel="icon">
+
+        <link href="../navStyles.css" rel="stylesheet">
+        <link href="projStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../webkitScroll.css">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav id="nav_bar_div">
+                <a class="nav_bar header_locations" id="nav_projects"
+                    href="../Projects.html" data-remove-file-extension="true">Projects</a>
+                <a class="nav_bar header_locations" id="nav_about"
+                    href="../About.html" data-remove-file-extension="true">About</a>
+                <a class="nav_bar header_locations" id="nav_contact"
+                    href="../Contact.html" data-remove-file-extension="true">Contact</a>
+                <a class="nav_bar header_title" href="..">HOME</a>
+            </nav>
+
+            <main class="content">
+                <div class="main_title">
+                    JSON Routine File Processor
+                </div>
+
+                <div class="info_bar">
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Start
+                        </div>
+                        <div class="info_bar_value">
+                            Feb. 2023
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Technologies
+                        </div>
+                        <div class="info_bar_value">
+                            Java, Maven, Lasherfiche API, Jackson
+                        </div>
+                    </div>
+                    <div id="info_bar_type" class="info_bar_section">
+                        <div class="info_bar_header">
+                            Type
+                        </div>
+                        <div class="info_bar_value">
+                            Directory and File sorting and processing
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Last updated
+                        </div>
+                        <div class="info_bar_value">
+                            Apr. 2023
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="nav_button_div">
+                    <a class="nav_button_anchor"
+                        href="https://github.com/Tacitor/ENGG1420-FinalProj"
+                        target="_blank">
+                        <div class="nav_button_anchor_flex">
+                            <div class="nav_button_anchor_flex_svg">
+                                <svg class="nav_button_svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                    width="32" height="32" fill="#eaeaee">
+                                    <path
+                                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="nav_button_anchor_flex_text">
+                                View Source
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/FileProcessorJSON-1150.webp"
+                            srcset="images/FileProcessorJSON-256.webp 256w,  
+                                    images/FileProcessorJSON-684.webp 684w,  
+                                    images/FileProcessorJSON-950.webp 950w,  
+                                    images/FileProcessorJSON-1150.webp 1150w,
+                                    images/FileProcessorJSON-1380.webp 1380w,
+                                    images/FileProcessorJSON-1570.webp 1570w,
+                                    images/FileProcessorJSON-1750.webp 1750w,
+                                    images/FileProcessorJSON-1900.webp 1900w,
+                                    images/FileProcessorJSON-2048.webp 2048w"
+                            sizes="(min-width: 460px) calc(40vw - 50px), calc(75.71vw - 207px)"
+                            alt="A screenshot of a .JSON file that could be used in the File Processor">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            The JSON Routine File Processor is the final project
+                            of the ENGG*1420 OOP Course I took in the winter
+                            2023 semester at the UoG. It was developed by a team
+                            of 6. The program is written entirely in Java and
+                            makes use of the Laserfiche company's remote
+                            repository API. The program has the ability to read
+                            in a .JSON file using the Jackson JSON parser for
+                            Java. The structure from the JSON is stored in a
+                            Plain Old Java Object (POJO) hierarchy that extracts
+                            the relational structure from the JSON. The POJO
+                            structure is then passed off the Sequencer that
+                            converts the POJO structure into a class hierarchy
+                            using feature rich classes that possess methods to
+                            process data.
+                            <br>
+                            <br>
+                            The .JSON file contains all the instructions for a
+                            given processing scenario. Every scenario is broken
+                            up into processing elements. A processing element
+                            performs an action. It might act as a filter, or
+                            print out information, or list child directories or
+                            files. Each Processing element is required to have
+                            input entries and parameters. The input entries can
+                            be either remote or local entries. Any entry can
+                            either be a file or a directory (folder). This
+                            yields a total of 4 possible identities for an
+                            entry. This means an Entry is either a local File,
+                            local Folder, remote File, or remote Folder. The
+                            JSON file then provides the parameters of the
+                            processing element, which are specific to each type
+                            of processing element. One thing to note is that
+                            only the first processing element needs to provide
+                            the input entries. All subsequent processing
+                            elements will take their input directly from the
+                            output of the previous processing element.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+
+                    All of this allows the JSON Routine File Processor to
+                    automatically process, many Entries at once. This might
+                    include listing all the sub folders in a given folder and
+                    renaming all the folders at once. Then Go into each
+                    subfolder and select only text files that contain the phrase
+                    "Object Oriented Programming". The next processing element
+                    might further narrow down the selected Entries to only ones
+                    that are over 500 MB in size. The final processing element
+                    might then print out the meta data of the remaining files.
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            This project made heavy use of GitHub to control the
+                            versions of the program while it was in development.
+                            Many of the team members were writing new code and
+                            changing existing code in parallel with others
+                            simultaneously. We made heavy use of branches and
+                            only merged in changes to the main branch once a
+                            given feature was complete.
+                            <br>
+                            <br>
+                            This project has the most intertwined and convoluted
+                            network graph of any other project I have worked on
+                            to date. This is a result of the large amount of
+                            parallelization and simultaneous work as all 6
+                            members were working on the project. If you scroll
+                            all the way to the right on the network graph it
+                            even appears that some commits were made weaving in
+                            and out of April 2nd and 3rd. Quite frankly I am not
+                            sure what causes this strange time travel behavior
+                            to appear as such on the graph.
+                            <br>
+                            <br>
+                            Another interesting aspect of this project is that
+                            it is able to interface with a remote repository
+                            from the Laserfiche company. These repos have a very
+                            novel file structure. In a given repository each
+                            entry is identified exclusively with an entry ID.
+                            There is no file structure, or access to the nested
+                            folder. If a folder contains other entries, then
+                            this is discovered by using the API to specifically
+                            query for child entries. These child entries can
+                            again just be directly accessed with the Entry ID
+                            without needing to even know it exists withing a
+                            folder. These quirks made it very interesting to get
+                            both local entries and remote entries interoperable.
+
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/FileProcessorContributors-1150.webp"
+                            srcset="images/FileProcessorContributors-256.webp 256w,
+                                    images/FileProcessorContributors-670.webp 670w,
+                                    images/FileProcessorContributors-906.webp 906w,
+                                    images/FileProcessorContributors-1150.webp 1150w,
+                                    images/FileProcessorContributors-1340.webp 1340w,
+                                    images/FileProcessorContributors-1510.webp 1510w,
+                                    images/FileProcessorContributors-1660.webp 1660w,
+                                    images/FileProcessorContributors-1800.webp 1800w,
+                                    images/FileProcessorContributors-1930.webp 1930w,
+                                    images/FileProcessorContributors-2048.webp 2048w"
+                            sizes="(min-width: 540px) calc(40vw - 50px), calc(76vw - 237px)"
+                            alt="A screenshot of a .JSON file that could be used in the File Processor">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="single_imgs_div">
+                    <div class="single_imgs_single">
+                        <div class="image_desc">
+                            Note: This network graph scrolls horizontally.
+                        </div>
+                        <img class="single_imgs_img"
+                            src="images/originals/FileProcessorGraph.png"
+                            alt="A screenshot showing the entire Git commit network graph as rendered on GitHub.">
+
+                        <div class="image_desc">
+                            The entire Git commit network graph as rendered on
+                            GitHub.
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

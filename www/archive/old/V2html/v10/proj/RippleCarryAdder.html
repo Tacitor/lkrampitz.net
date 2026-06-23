@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>8-Bit Ripple Carry Adder</title>
+        <link rel="canonical" href="https://www.lkrampitz.net/proj/ModelM">
+
+        <link href="../images/favicon.ico" rel="icon">
+
+        <link href="../navStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../webkitScroll.css">
+        <link href="projStyles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav id="nav_bar_div">
+                <a class="nav_bar header_locations"
+                   id="nav_projects"
+                   href="../Projects.html" data-remove-file-extension="true">Projects</a>
+                <a class="nav_bar header_locations"
+                   id="nav_about"
+                   href="../About.html" data-remove-file-extension="true">About</a>
+                <a class="nav_bar header_locations"
+                   id="nav_contact"
+                   href="../Contact.html" data-remove-file-extension="true">Contact</a>
+                <a class="nav_bar header_title"
+                   href="..">HOME</a>
+            </nav>
+
+            <main class="content">
+                <div class="main_title">
+                    8-Bit Ripple Carry Adder
+                </div>
+
+                <div class="info_bar">
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Start
+                        </div>
+                        <div class="info_bar_value">
+                            Dec 2023
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Technologies
+                        </div>
+                        <div class="info_bar_value">
+                            DIP Logic ICs, Breadboards
+                        </div>
+                    </div>
+                    <div id="info_bar_type" class="info_bar_section">
+                        <div class="info_bar_header">
+                            Type
+                        </div>
+                        <div class="info_bar_value">
+                            Compinational Logic Design
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Last updated
+                        </div>
+                        <div class="info_bar_value">
+                            Dec 2023
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    After learning about Full Adders and Ripple Carry Adders in ENGG*2410 — Digital Systems Design in the Fall semester of 2023, I wanted to
+                    build an 8-Bit ripple carry adder at home. The issue being that I do not own a Xilinx FPGA and therefore would need a different strategy
+                    than the one used in ENGG*2410. Luckily though I had a few breadboards and Quad 2-input Logic ICs. Specifically, XOR, AND, and OR logic
+                    chips. Each 14 pin DIP logic chip had 4 logic gates on it. Each gate has two input pins and an output pin. This leaves one more pin of the
+                    DIP package for a VCC connection and then one more for ground. The first step in the process was to plan out the 8-Bit ripple carry adder. A
+                    plan of the logic was made using AutoCAD.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="single_imgs_div">
+                    <div class="single_imgs_single">
+                        <div class="image_desc">
+                            Note: This logic diagram scrolls horizontally.
+                        </div>
+                        <img class="single_imgs_img_smaller"
+                             src="images/originals/RippleCarryAdderLogic.svg"
+                             alt="A logic diagram of the adder circuit. Each full adder passes its carry out bit into the carry in bit of the following adder.">
+
+                        <div class="image_desc">
+                            Each full adder passes its carry out bit into the carry in bit of the following adder.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    Then a new block diagram was made that incorporated the pinout of the DIP ICs. This was again made using AutoCAD and like the above image it
+                    was exported as an SVG so that all the details can be zoomed in on. This new block diagram was made to get a better understanding for how to
+                    plan out the wires and connections that would be needed for the physical assembly of the 8-Bit adder.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_section_single_div">
+                    <div class="img_txt_section_txt">
+                        <img class="img_section_single_img_SVG"
+                             src="images/originals/RippleCarryAdderBlock.svg"
+                             alt="A block diagram of the adder circuit that incorporates the pinout of the DIP ICs.">
+
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    Once this was done I began assembling the breadboards. I began by layout all the ICs I would need. In this project I made use of:
+
+                    <ul class="ul_li_proj">
+                        <li>4 x 74x86 Quad 2-input XOR ICs</li>
+                        <li>4 x 74x08 Quad 2-input AND ICs</li>
+                        <li>2 x 74x32 Quad 2-input OR ICs</li>
+                        <li>2 x DIP 8 Switches Board</li>
+                        <li>2 x Full sized Breadboards</li>
+                        <li>1 x Mini Breadboard</li>
+                        <li>5 x 200Ω Resistors</li>
+                        <li>8 x 10KΩ small Resistors</li>
+                        <li>8 x 10KΩ larger Resistors</li>
+                        <li>8 x Green LEDs</li>
+                        <li>1 x Red LED</li>
+                        <li>Many many wires</li>
+                    </ul>
+
+                    The ICs were split up and placed evenly across the two full sized breadboards. The mini breadboard was used for the output to be displayed
+                    on the 9 LEDs. The 8 green LEDs being the output from sum bits S<sub>0</sub> to S<sub>7</sub> and the red LED displays the final carry bit
+                    C<sub>out</sub>. This C<sub>out</sub> bit could in theory also be considered as an S<sub>8</sub> bit when interpreting the binary result of
+                    the addition. The building process began by routing all wire as clean, straight and direct as possible. When only a few connections were
+                    made this was easy.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_section_single_div">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            At this point all the ICs and DIP switches had been placed and a single full adder had been completed.
+                        </p>
+                        <img class="img_section_single_img"
+                             src="images/originals/RippleCarryAdderEarly.png"
+                             srcset="images/RippleCarryAdderEarly-256.webp 256w,
+                                    images/RippleCarryAdderEarly-990.webp 990w,
+                                    images/RippleCarryAdderEarly-1370.webp 1370w,
+                                    images/RippleCarryAdderEarly-1670.webp 1670w,
+                                    images/RippleCarryAdderEarly-1920.webp 1920w,
+                                    images/RippleCarryAdderEarly-2150.webp 2150w,
+                                    images/RippleCarryAdderEarly-2350.webp 2350w,
+                                    images/RippleCarryAdderEarly-2530.webp 2530w,
+                                    images/RippleCarryAdderEarly-2710.webp 2710w,
+                                    images/RippleCarryAdderEarly-2870.webp 2870w,
+                                    images/RippleCarryAdderEarly-3024.webp 3024w"
+                             sizes="60vw"
+                             alt="Image of all the ICs and DIP switches placed and a single full adder completed.">
+
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    As more and more full adders were wired up and completed the connections started to get more out of hand an increasingly unmanageable. This
+                    project really makes me appreciate FPGAs design where the connection logistics are not important for the designer, and PCBs with elegant
+                    routing. Doing all the wire routing by hand is by far the hardest and most time-consuming part of this entire project. Near the final two
+                    full adders I also ran out of the stiffer flat laying wires and instead had to finish the project with jumper cables.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_section_single_div">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            On the left DIP switch an input of 10001010<sub>binary</sub> is given which is added to the input of the right DIP switch with input
+                            00100010<sub>binary</sub>. This yields an output of 010101100<sub>binary</sub> on the LEDs. If the two inputs are converted to base
+                            ten then one gets an expression of 138<sub>decimal</sub> + 34<sub>decimal</sub> which equals 172<sub>decimal</sub> and this is the
+                            result we expect!
+                        </p>
+                        <img class="img_section_single_img"
+                             src="images/originals/RippleCarryAdderDone.png"
+                             srcset="images/RippleCarryAdderDone-256.webp 256w,
+                                    images/RippleCarryAdderDone-1290.webp 1290w,
+                                    images/RippleCarryAdderDone-1800.webp 1800w,
+                                    images/RippleCarryAdderDone-2048.webp 2048w"
+                             sizes="60vw"
+                             alt="Image of the completed circuit.">
+
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    Overall, I am quite pleased with the 8-Bit Ripple Carry Adder. It took much longer than I anticipated and is a little more messy than I had
+                    hoped for. But in order to finish it within a reasonable amount of time and using the wire and tools I had on hand this was the most
+                    reasonable result. Given more time and some more wire and proper wire strippers I would probably have been abler to make a cleaner routes
+                    for the wires perhaps I will try to rebuild it with such tools. What I find most pleasing about it is watching the carry bits roll over into
+                    the output, this can be seen below.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                             src="images/originals/RippleCarryAdderPreCarry.png"
+                             srcset="images/RippleCarryAdderPreCarry-256.webp 256w,
+                                    images/RippleCarryAdderPreCarry-830.webp 830w,
+                                    images/RippleCarryAdderPreCarry-1150.webp 1150w,
+                                    images/RippleCarryAdderPreCarry-1510.webp 1510w,
+                                    images/RippleCarryAdderPreCarry-1800.webp 1800w,
+                                    images/RippleCarryAdderPreCarry-2048.webp 2048w"
+                             sizes="(min-width: 380px) calc(40vw - 50px), calc(6.67vw + 70px)"
+                             alt="Picture of the adder where an input of all 1s is given on the left DIP switches.">
+
+                        <div class="image_desc">
+                            An input of all 1s is given on the left DIP switches.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                             src="images/originals/RippleCarryAdderPostCarry.png"
+                             srcset="images/RippleCarryAdderPostCarry-256.webp 256w,
+                                    images/RippleCarryAdderPostCarry-830.webp 830w,
+                                    images/RippleCarryAdderPostCarry-1150.webp 1150w,
+                                    images/RippleCarryAdderPostCarry-1510.webp 1510w,
+                                    images/RippleCarryAdderPostCarry-1800.webp 1800w,
+                                    images/RippleCarryAdderPostCarry-2048.webp 2048w"
+                             sizes="(min-width: 340px) calc(40.15vw - 55px), calc(30vw - 30px)"
+                             alt="Picture of the adder where the output has  rolled over and the output only has the carry out light on">
+
+                        <div class="image_desc">
+                            Then when a value of 1 is added this causes the entire number to roll over and the output only has the carry out light on and the
+                            rest of the sum bits are off.
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>
