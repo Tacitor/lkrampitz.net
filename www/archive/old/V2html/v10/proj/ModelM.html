@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <title>Model M</title>
+        <link rel="canonical" href="https://www.lkrampitz.net/proj/ModelM">
+
+        <link href="../images/favicon.ico" rel="icon">
+
+        <link href="../navStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="../webkitScroll.css">
+        <link href="projStyles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav id="nav_bar_div">
+                <a class="nav_bar header_locations" id="nav_projects"
+                    href="../Projects.html" data-remove-file-extension="true">Projects</a>
+                <a class="nav_bar header_locations" id="nav_about"
+                    href="../About.html" data-remove-file-extension="true">About</a>
+                <a class="nav_bar header_locations" id="nav_contact"
+                    href="../Contact.html" data-remove-file-extension="true">Contact</a>
+                <a class="nav_bar header_title" href="..">HOME</a>
+            </nav>
+
+            <main class="content">
+                <div class="main_title">
+                    Model M Keyboard Restoration
+                </div>
+
+                <div class="info_bar">
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Start
+                        </div>
+                        <div class="info_bar_value">
+                            Dec. 2021
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Technologies
+                        </div>
+                        <div class="info_bar_value">
+                            Soldering, Microcontrollers
+                        </div>
+                    </div>
+                    <div id="info_bar_type" class="info_bar_section">
+                        <div class="info_bar_header">
+                            Type
+                        </div>
+                        <div class="info_bar_value">
+                            Retro computer restoration
+                        </div>
+                    </div>
+                    <div class="info_bar_section">
+                        <div class="info_bar_header">
+                            Last updated
+                        </div>
+                        <div class="info_bar_value">
+                            Nov. 2022
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    As of writing I have restored three separate IBM keyboard.
+                    Two of which are proper Model M keyboards, one blue badge
+                    and one grey oval badge. The other keyboard is an M122
+                    Battlecruiser. The M122 is the first IBM keyboard I ever
+                    found, used, and have restored. Found in the dusty server
+                    room equipment locker of my employer at the time I found it
+                    discarded in a pile of unused parts. My M122 was once used
+                    as the terminal access keyboard of the AS/400 mainframe that
+                    the company used as its database. As a quick side note the
+                    company still uses an AS/400 running the exact same data
+                    base management software as of writing in July 2023, albeit
+                    through an emulator.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            When I found my M122 it was not in good shape, and I
+                            asked my boss if I could have it since it clearly
+                            hasn't been used in years. He agreed and I began to
+                            research how to restore such a keyboard. The first
+                            step was a cleaning process since it was absolutely
+                            disgusting when I found it. The keyboard was covered
+                            in ancient dust and grime, covered in marker and pen
+                            ink, and missing key caps. Another issues I would
+                            face is that the keyboard uses an 8P8C connector.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/ModelMFirst-1150.webp"
+                            srcset="images/ModelMFirst-256.webp 256w,
+                                    images/ModelMFirst-1150.webp 1150w,
+                                    images/ModelMFirst-1660.webp 1660w,
+                                    images/ModelMFirst-2048.webp 2048w"
+                            sizes="(min-width: 400px) calc(40vw - 50px), calc(77.5vw - 193px)"
+                            alt="An image of the Model M in the state when I first got it.">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/ModelMOpen-1150.webp"
+                            srcset="images/ModelMOpen-256.webp 256w,
+                                    images/ModelMOpen-830.webp 830w,
+                                    images/ModelMOpen-1150.webp 1150w,
+                                    images/ModelMOpen-1430.webp 1430w,
+                                    images/ModelMOpen-1660.webp 1660w,
+                                    images/ModelMOpen-1860.webp 1860w,
+                                    images/ModelMOpen-2048.webp 2048w"
+                            sizes="(min-width: 460px) calc(40vw - 50px), calc(75.71vw - 207px)"
+                            alt="An image of the M122 in 3 distinct pieces.">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            In order to clean the keyboard, I first needed to
+                            disassemble it. This could only be done once I took
+                            out the screws. Sadly, I did not have a compatible
+                            driver, nor did any hardware store I could find. To
+                            take off the back panel I would need a hex driver,
+                            but I was not sure which one driver. I was able to
+                            borrow a kit from my other place of employment and
+                            through trial and error I discovered I needed a 5.5
+                            mm hex driver. Upon first disassembly of the
+                            keyboard, I was finally able to find a part number
+                            on the birth certificate of the keyboard. This M122
+                            was made 28. August 1998 by IBM in the UK. It is P/N
+                            1394167 but really has an Assembly Part Number of
+                            1394177. I put the keyboard back together and
+                            returned the driver to my place of work the
+                            following day. Using the new identifying
+                            information, I had now found I began more
+                            researching and was able to put together a plan on
+                            how to clean and restore the keyboard to working
+                            order. The first step was to order a precision
+                            driver kit which I did. Now I was able to open the
+                            keyboard whenever I needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            Before beginning to clean the keyboard I first
+                            wanted to see if I could even get it working again.
+                            But because I do not have any devices that connects
+                            to a keyboard over an 8P8C connector I needed to
+                            make an adapter first. In my research I came across
+                            a device called a Soarer's Converter. This is a
+                            little device that will actively convert the signals
+                            from the M122 to a USB keyboard signaling. To build
+                            my Soarer's Converter I used a Pro Micro Arduino
+                            clone. It is a little microcontroller that uses an
+                            ATmega32U4 processor. It uses the firmware written
+                            by this person by the name of Soarer and uses a
+                            custom config I wrote for the M122 Battlecruiser.
+                            This custom config was needed because there is
+                            certain key that do not work. While testing I found
+                            that the left shift key does not respond. Therefore,
+                            the translation microcontroller will <i>press</i> a
+                            shift key when the play button left of the shift key
+                            is pressed. To connect the convert to the keyboard a
+                            female-male dupont cable is used. The female end of
+                            the dupont cable is used to connect to the pinout on
+                            the PCB of the keyboard. Then the male ends of the
+                            dupont cable are bent over and soldered into the
+                            through holes of the Pro Micro. Then the converter
+                            is connected to a USB cable with a micro-B connector
+                            on the keyboard side and a type-A connector on the
+                            PC side. Then once I was able to get the converter
+                            to work and I was able to confirm that the keyboard
+                            works. The next step was then to clean the keyboard.
+                            The task was split into two section, the parts that
+                            can tolerate water, and the parts that cannot. For
+                            the upper and lower chassis, they were washed in the
+                            tub with soapy water. It was very challenging to get
+                            all the ink off and some of it I had to leave on.
+                            The back plate, barrel plate, membrane, and springs
+                            needed to be cleaned with 99% isopropanol. The
+                            barrel plate was absolutely covered in ancient dust
+                            and grime. It took many cotton swabs and cotton
+                            balls to remove it all.
+                        </p>
+                    </div>
+
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/ModelMMicrocontroller-1150.webp"
+                            srcset="images/ModelMMicrocontroller-256.webp 256w,
+                                    images/ModelMMicrocontroller-830.webp 830w,
+                                    images/ModelMMicrocontroller-1150.webp 1150w,
+                                    images/ModelMMicrocontroller-1380.webp 1380w,
+                                    images/ModelMMicrocontroller-1570.webp 1570w,
+                                    images/ModelMMicrocontroller-1750.webp 1750w,
+                                    images/ModelMMicrocontroller-1900.webp 1900w,
+                                    images/ModelMMicrocontroller-2048.webp 2048w"
+                            sizes="(min-width: 540px) calc(40vw - 50px), calc(76vw - 237px)"
+                            alt="A picture of the microcontroller used in the M122 keyboard.">
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="img_txt_section">
+                    <div class="img_txt_section_img_div">
+                        <img class="img_txt_section_img"
+                            src="images/ModelMClean-1660.webp"
+                            srcset="images/ModelMClean-256.webp 256w,
+                                    images/ModelMClean-1150.webp 1150w,
+                                    images/ModelMClean-1660.webp 1660w,
+                                    images/ModelMClean-2048.webp 2048w"
+                            sizes="(min-width: 460px) calc(40vw - 50px), calc(75.71vw - 207px)"
+                            alt="A picture of the cleaned M122 without the key caps or upper chassis.">
+                    </div>
+
+                    <div class="img_txt_section_txt">
+                        <p class="proj_p">
+                            The back plate, barrel plate, membrane, and springs
+                            needed to be cleaned with 99% isopropanol. The
+                            barrel plate was absolutely covered in ancient dust
+                            and grime. It took many cotton swabs and cotton
+                            balls to remove it all. While I was scrubbing away
+                            at the barrel plate, they key stems and the key caps
+                            were soaking in a light soapy water bath. I made
+                            sure to use distilled water so that there would be
+                            no friction causing mineral deposits on the keys
+                            when they dried. I would stir the key soup every ten
+                            minutes or so just to try and get as much gunk to
+                            soften up and get washed off of the keys. Then I
+                            laid out the keys on a towel and set up a fan to
+                            blow air across then to speed up the drying process.
+                            I left them like this for 24-48 hours. To check if
+                            all the water has evaporated, I blew into the base
+                            of the key stems, if I felt water droplets spray
+                            back into my face then I knew they were not yet dry.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="txt_section">
+                    Then in about July of 2022 I was informed by a colleague
+                    that was cleaning in the electrical room that there were
+                    'two more of those ugly keyboards' in the electrical room.
+                    This is when I came into two more IBM keyboards. These were
+                    true Model Ms. One is a grey oval badge and the other a blue
+                    badge. I also restored these keyboards. These two though did
+                    not need a Soarer's Converter though because they connect
+                    with a PS/2 port which is still a commonly available enough
+                    connector as of writing. Once I was done restoring the blue
+                    badge Model M I gave it to a friend of mine for their
+                    birthday, reducing my collection back down to only two.
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/ModelMSetup-1510.webp"
+                            srcset="images/ModelMSetup-256.webp 256w,
+                                    images/ModelMSetup-1150.webp 1150w,
+                                    images/ModelMSetup-1510.webp 1510w,
+                                    images/ModelMSetup-1800.webp 1800w,
+                                    images/ModelMSetup-2048.webp 2048w"
+                            sizes="(min-width: 500px) calc(40vw - 50px), (min-width: 360px) calc(45vw - 74px), 80px"
+                            alt="My grey badge M102 P/N 1391401 fully restored and at
+                            my desk used as my daily driver.">
+
+                        <div class="image_desc">
+                            My grey badge M102 P/N 1391401 fully restored and at
+                            my desk used as my daily driver.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/ModelMPCB-1150.webp"
+                            srcset="images/ModelMPCB-256.webp 256w,
+                                    images/ModelMPCB-830.webp 830w,
+                                    images/ModelMPCB-1150.webp 1150w,
+                                    images/ModelMPCB-1510.webp 1510w,
+                                    images/ModelMPCB-1800.webp 1800w,
+                                    images/ModelMPCB-2048.webp 2048w"
+                            sizes="(min-width: 400px) calc(40vw - 50px), calc(2.5vw + 93px)"
+                            alt="A closeup view of my M122 connection to the Soarer's Converter.">
+
+                        <div class="image_desc">
+                            A closeup view of my M122 connection to the Soarer's
+                            Converter.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break_spacer"></div>
+
+                <div class="dual_imgs_div">
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="images/ModelMBluePCB-1150.webp"
+                            srcset="images/ModelMBluePCB-256.webp 256w,
+                                    images/ModelMBluePCB-830.webp 830w,
+                                    images/ModelMBluePCB-1150.webp 1150w,
+                                    images/ModelMBluePCB-1510.webp 1510w,
+                                    images/ModelMBluePCB-1800.webp 1800w,
+                                    images/ModelMBluePCB-2048.webp 2048w"
+                            sizes="calc(40vw - 50px)"
+                            alt="A closeup view of the PCB from the blue badge M101.">
+
+                        <div class="image_desc">
+                            A closeup view of the PCB from the blue badge M101.
+                        </div>
+                    </div>
+
+                    <div class="dual_imgs_single">
+                        <img class="dual_imgs_img"
+                            src="../images/modleM-1190.webp"
+                            srcset="../images/modleM-256.webp 256w,
+                                    ../images/modleM-860.webp 860w,
+                                    ../images/modleM-1190.webp 1190w,
+                                    ../images/modleM-1530.webp 1530w,
+                                    ../images/modleM-1810.webp 1810w,
+                                    ../images/modleM-2048.webp 2048w"
+                            sizes="calc(40vw - 50px)"
+                            alt="Both of the M101 Model Ms on my desk.">
+
+                        <div class="image_desc">
+                            Both of the M101 Model Ms on my desk.
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>
