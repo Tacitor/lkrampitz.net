@@ -1,3 +1,7 @@
+ErrorDocument 403 /errorDocuments/_403.html
+ErrorDocument 404 /errorDocuments/_404.html
+ErrorDocument 500 /errorDocuments/_500.html
+
 # This allows mixed case requests (mod_speling)
 #Options -MultiViews
 #<IfModule mod_speling.c>
