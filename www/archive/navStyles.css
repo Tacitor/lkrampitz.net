@@ -51,6 +51,10 @@ p {
     color: rgb(190, 190, 190);
 }
 
+.error_nav_bar {
+    color: black;
+}
+
 .header_locations {
     font-family: inconsolata;
     font-size: 22px;
