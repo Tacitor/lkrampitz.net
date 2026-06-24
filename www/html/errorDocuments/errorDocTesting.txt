@@ -1,0 +1,10 @@
+When the need to test error doc comes up try this:
+
+1. Drill down to a dir that does not get a lot of traffic
+    eg. On www: www/html/proj/images/originals
+    eg. On archive: archive/old/V2html/v9/proj/
+2. Create a new .htaccess file in this dir live on the real prod web server
+3. Write only this:
+    RewriteEngine On
+    RewriteRule ^ - [R=500,L]
+4. Change R=### to test the ones that you need. This method is good for forcing 403 and 500
