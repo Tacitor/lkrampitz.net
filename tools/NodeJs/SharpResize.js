@@ -3,7 +3,7 @@ const sharp = require('sharp');
 let dims = [[256, 192], [830, 623], [1150, 863], [1510, 1133], [1800, 1350], [2048, 1536]]
 var src = 'RippleCarryAdderPostCarry';
 var path = '/Users/Lukas/Documents/ICS/donau.ca/www/html/proj/images/';
-var doLossless = false;
+var doLossless = true;
 
 for (var dim = 0; dim < dims.length; dim++) {
 
