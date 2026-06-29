@@ -4,18 +4,22 @@
         "catan",
         "ctypes",
         "cust",
+        "Devinci",
         "ENGG",
+        "Factorio",
+        "Hitman",
         "Laserfiche",
         "libpuzzlegen",
+        "Lkrampitz",
         "microcontroller",
         "Microcontrollers",
         "minesweeping",
         "MPCB",
         "pythonic",
         "Sokoban",
+        "Stardew",
         "TBWC",
-        "Tremblant",
-        "Lkrampitz"
+        "Tremblant"
     ],
     "cSpell.language": "en,de-DE"
 }
